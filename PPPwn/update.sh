@@ -33,11 +33,11 @@ for rdir in "${rdirarr[@]}"; do
     fi
 done  
 if [[ ! -z $PSDRIVE ]] ;then
-  if [ -f "USB Drive/goldhen.bin" ]; then
-     if [ -f $PSDRIVE'/goldhen.bin' ]; then
-	   sudo rm -f $PSDRIVE'/goldhen.bin'
+  if [ -f "USB Drive/payload.bin" ]; then
+     if [ -f $PSDRIVE'/payload.bin' ]; then
+	   sudo rm -f $PSDRIVE'/payload.bin'
      fi
-     sudo cp "USB Drive/goldhen.bin" $PSDRIVE
+     sudo cp "USB Drive/payload.bin" $PSDRIVE
   fi
 fi
 cd /boot/firmware/PPPwn
